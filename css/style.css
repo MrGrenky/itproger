@@ -1,0 +1,77 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #e7e7e7;
+}
+
+main{
+    padding-top: 100px;
+}
+
+.container{
+    background-color: #c3c3c3;
+    justify-content: space-between;
+    border: 1px solid rgb(146, 146, 146);
+    width: 800px;
+    height: 400px;
+    display: flex;
+    align-items: center;
+    margin: 0 auto;
+    /* padding: 0 20px; */
+    
+}
+
+.container__box{
+    z-index: 1;
+    width: 160px;
+    height: 160px;
+    background-color: #d34747;
+}
+
+.container__box:first-child{
+    z-index: 0;
+    align-self: flex-start;
+    /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#ff3236+0,2989d8+71,7db9e8+100 */
+    background: #ff3236; /* Old browsers */
+    background: -moz-linear-gradient(top,  #ff3236 0%, #2989d8 71%, #7db9e8 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top,  #ff3236 0%,#2989d8 71%,#7db9e8 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom,  #ff3236 0%,#2989d8 71%,#7db9e8 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ff3236', endColorstr='#7db9e8',GradientType=0 ); /* IE6-9 */
+    
+
+    /* animation-name: move;
+    animation-duration: 1s; */
+
+}
+
+.container__box:first-child:hover{
+    animation: move 1s ease forwards;
+}
+
+@keyframes move {
+	0% {transform: translateX(0px) transform: translateY(0px);}
+    100% {transform: translateX(100px) translateY(100px);}
+}
+
+@keyframes rotate{
+    0% {transform: rotate(0) scale(1); transform-origin:30px 30px;}
+    100% {transform: rotate(75deg) scale(1.3);transform-origin: 30px 30px;}
+}
+
+.container__box:last-child{
+    align-self: flex-end;
+    /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#2c1777+0,2989d8+71,7db9e8+100 */
+    background: #2c1777; /* Old browsers */
+    background: -moz-linear-gradient(top,  #2c1777 0%, #2989d8 71%, #7db9e8 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top,  #2c1777 0%,#2989d8 71%,#7db9e8 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom,  #2c1777 0%,#2989d8 71%,#7db9e8 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#2c1777', endColorstr='#7db9e8',GradientType=0 ); /* IE6-9 */
+
+}
+
+.container__box:last-child:hover{
+    animation: rotate 1s ease forwards;
+}
